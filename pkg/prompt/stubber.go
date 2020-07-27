@@ -14,6 +14,8 @@ type askStubber struct {
 	Stubs [][]*QuestionStub
 }
 
+// TODO ADAPT THIS ALL TO SUPPORT THE NEW SURVEYASKONE
+
 func InitAskStubber() (*askStubber, func()) {
 	origSurveyAsk := SurveyAsk
 	as := askStubber{}
